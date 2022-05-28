@@ -72,13 +72,12 @@
 
   function generateRandomString () {
     let num = getNumber();
-    console.log(num)
+    // console.log(num)
     var x = checkWhichSlotsAreEmpty();
     for (let i = 0; i < num; i++) {
-      console.log(i)
+      // console.log(i)
       var y = generateRandomNumber();
       updateArray(x, y);
-      
     }
     displayArray(x);
   }
