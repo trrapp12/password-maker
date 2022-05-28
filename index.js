@@ -53,6 +53,7 @@
     outPut3.innerText = '';
     outPut4.innerText = '';
     textInput.value = '';
+    passwordButton.innerText = "Generate Password"
   }
 
   function checkWhichSlotsAreEmpty () {
