@@ -1,0 +1,32 @@
+:root {
+  /* DarKMode Hex */
+--darkmode-hex-light-pink: #D762D9;
+--darkmode-hex-medium-pink : #B150F2;
+--darkmode-hex-light-purple : #883DF2;
+--darkmode-hex-dark : #282140;
+--darkmode-hex-blue : #3113F2;
+
+/* DarKMode rgba RGBA */
+--darkmode-rgba-light-pink : rgba(214, 97, 216, 1);
+--darkmode-rgba-medium-pink : rgba(177, 79, 242, 1);
+--darkmode-rgba-light-purple : rgba(136, 60, 242, 1);
+--darkmode-rgba-dark : rgba(39, 33, 63, 1);
+--darkmode-rgba-blue : rgba(49, 19, 242, 1);
+
+  /* Color Theme Light Mode */
+  --darkmode-hex-light-pink: #D762D9;
+  --darkmode-hex-medium-pink : #B150F2;
+  --darkmode-hex-light-purple : #883DF2;
+  --darkmode-hex-dark : #282140;
+  --darkmode-hex-blue : #3113F2;
+
+}
+
+
+
+
+
+
+body {
+  
+}
