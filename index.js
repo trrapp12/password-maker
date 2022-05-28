@@ -6,6 +6,7 @@
   const outPut2 = document.getElementById('option-2');
   const outPut3 = document.getElementById('option-3');
   const outPut4 = document.getElementById('option-4');
+  const textInput = document.getElementById('text')
 
   // create variables
 
@@ -26,28 +27,45 @@
     return (Math.floor(Math.random() * 77) + 1)
   }
 
-  function updateArray(array, value) {
-    array.push(characterArray[value])
+  function updateArray(chosenarray, value) {
+    chosenarray.push(characterArray[value])
+  }
+
+  function reset () {
+    passwordArray1 = [];
+    passwordArray2 = [];
+    passwordArray3 = [];
+    passwordArray4 = [];
+    outPut1.innerText = '';
+    outPut2.innerText = '';
+    outPut3.innerText = '';
+    outPut4.innerText = '';
+    textInput.value = '';
   }
 
   function checkWhichSlotsAreEmpty () {
     if (passwordArray1.length === 0) {
-      return outPut1
+      return passwordArray1
     } else if (passwordArray2.length === 0) {
-      return outPut2
+      return passwordArray2
     } else if (passwordArray3.length === 0) {
-      return outPut3
-    } else (passwordArray4.length === 0) {
-      return outPut4
+      return passwordArray3
+    } else if (passwordArray4.length === 0) {
+      passwordButton.innerText = "Reset";
+      return passwordArray4
+    } else {
+      reset()
     }
   }
 
   function generateRandomString () {
     let num = getNumber();
     console.log(num)
+    var x = checkWhichSlotsAreEmpty();
     for (let i = 0; i < num; i++) {
-      var x = generateRandomNumber();
-      updateArray(passwordArray1, x)
+      console.log(i)
+      var y = generateRandomNumber();
+      updateArray(x, y)
     }
     console.log(passwordArray1)
   }
