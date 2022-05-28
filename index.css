@@ -22,11 +22,10 @@
 
 }
 
-
-
-
-
-
-body {
-  
+textarea {
+  resize: none;
+  box-shadow: none;
+  border: none;
+  overflow: auto;
+  background-color: transparent;
 }

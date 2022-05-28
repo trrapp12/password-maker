@@ -7,6 +7,7 @@
   const outPut3 = document.getElementById('option-3');
   const outPut4 = document.getElementById('option-4');
   const textInput = document.getElementById('text')
+  const copyButton = document.getElementById('button-copy');
 
   // create variables
 
@@ -16,9 +17,29 @@
   let passwordArray4 = [];
 
   let characterArray = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','0','1','2','3','4','5','6','7','8','9','!','@','#','$','%','^','&','*','(',')','_','+','=','-','~']
-  let regexComparison = /^[a-zA-Z0-9!@#$%^&*()_\-+=~]*/g
 
   // create functions
+
+  // section 1 - copy functionality
+
+  function findTarget (evt) {
+    if (evt.target.className === 'option') {
+      
+      targetId = evt.target.id;
+      console.log(targetId)
+      targetElement = document.getElementById(targetId);
+      console.log(targetElement)
+      targetElement.select();
+      document.execCommand("copy")
+
+      // targetElement.select();
+      // navigator.clipboard.writeText(targetElement.value)
+      // alert("Password copied" + targetElement.value)
+    }
+  }
+
+  window.addEventListener('click', findTarget)
+  // section 2 - password generation
   function getNumber() {
     return Math.floor(document.getElementById('text').value)
   }
