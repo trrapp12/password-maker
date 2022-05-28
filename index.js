@@ -33,13 +33,13 @@
 
   function displayArray (outPutArray) {
     if (outPut1.innerText === '') {
-      outPut1.innerText = outPutArray.toString();
+      outPut1.innerText = outPutArray.toString().replace(/,/g, '');
     } else if (outPut2.innerText === '') {
-      outPut2.innerText = outPutArray.toString();
+      outPut2.innerText = outPutArray.toString().replace(/,/g, '');
     } else if (outPut3.innerText === '') {
-      outPut3.innerText = outPutArray.toString();
-    } else if(outPut4.innerText === '') {
-      outPut4.innerText = outPutArray.toString();
+      outPut3.innerText = outPutArray.toString().replace(/,/g, '');
+    } else if (outPut4.innerText === '') {
+      outPut4.innerText = outPutArray.toString().replace(/,/g, '');
     } 
   }
 
