@@ -31,6 +31,18 @@
     chosenarray.push(characterArray[value])
   }
 
+  function displayArray (outPutArray) {
+    if (outPut1.innerText === '') {
+      outPut1.innerText = outPutArray.toString();
+    } else if (outPut2.innerText === '') {
+      outPut2.innerText = outPutArray.toString();
+    } else if (outPut3.innerText === '') {
+      outPut3.innerText = outPutArray.toString();
+    } else if(outPut4.innerText === '') {
+      outPut4.innerText = outPutArray.toString();
+    } 
+  }
+
   function reset () {
     passwordArray1 = [];
     passwordArray2 = [];
@@ -65,12 +77,13 @@
     for (let i = 0; i < num; i++) {
       console.log(i)
       var y = generateRandomNumber();
-      updateArray(x, y)
+      updateArray(x, y);
+      
     }
-    console.log(passwordArray1)
+    displayArray(x);
   }
 
-  // add functions as listeners
+  // add listeners
   passwordButton.addEventListener('click', generateRandomString)
 
 })()
