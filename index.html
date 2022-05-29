@@ -3,22 +3,27 @@
   <head>
     <title>Trevor Rapp Password Generator</title>
     <link href="index.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/pcq5txz.css">
   </head>
   <body>
     <div class="container--outer">
       <div class="container--dark-mode">
-      <h1>Generate a <span class="accent">Random Password</span></h1>
-      <p>Never have to use an insecure password again</p>
-
-      <label for="text" id="text-label">Number of Characters</label>
-      <input type="text" id="text" name="text"></input>
-      <button id="button" class="button">Generate Password</button>
-      <button id="button-copy" class="button">Copy</button>
+      <div class="margin-spacing margin-bottom-decoration ">
+        <h1>Generate a <span class="accent">Random Password</span></h1>
+        <p>Never have to use an insecure password again</p>
+      </div>
+      <div class="container--input margin-spacing">
+        <label for="text" id="text-label">How long do you want the password to be?</label>
+        <input type="text" id="text" name="text"></input>
+      </div>
+      <div class="container--buttons margin-spacing margin-bottom-decoration ">
+        <button id="button" class="button">Generate Password</button>
+      </div>
       <div class="container--results">
-        <textarea id="option-1" class="option"></textarea>
-        <textarea id="option-2" class="option"></textarea>
-        <textarea id="option-3" class="option"></textarea>
-        <textarea id="option-4" class="option"></textarea>
+        <textarea id="option-1" class="option" placeholder="password option 1"></textarea>
+        <textarea id="option-2" class="option" placeholder="password option 2"></textarea>
+        <textarea id="option-3" class="option" placeholder="password option 3"></textarea>
+        <textarea id="option-4" class="option" placeholder="password option 4"></textarea>
       </div>
       <div class="security-rating">
 

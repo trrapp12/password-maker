@@ -6,8 +6,7 @@
   const outPut2 = document.getElementById('option-2');
   const outPut3 = document.getElementById('option-3');
   const outPut4 = document.getElementById('option-4');
-  const textInput = document.getElementById('text')
-  const copyButton = document.getElementById('button-copy');
+  const textInput = document.getElementById('text');
 
   // create variables
 
@@ -53,13 +52,13 @@
   }
 
   function displayArray (outPutArray) {
-    if (outPut1.innerText === '') {
+    if (outPut1.innerHTML === '') {
       outPut1.innerText = outPutArray.toString().replace(/,/g, '');
-    } else if (outPut2.innerText === '') {
+    } else if (outPut2.innerHTML === '') {
       outPut2.innerText = outPutArray.toString().replace(/,/g, '');
-    } else if (outPut3.innerText === '') {
+    } else if (outPut3.innerHTML === '') {
       outPut3.innerText = outPutArray.toString().replace(/,/g, '');
-    } else if (outPut4.innerText === '') {
+    } else if (outPut4.innerHTML === '') {
       outPut4.innerText = outPutArray.toString().replace(/,/g, '');
     } 
   }
