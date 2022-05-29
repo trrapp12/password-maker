@@ -29,11 +29,12 @@
       targetElement = document.getElementById(targetId);
       console.log(targetElement)
       targetElement.select();
-      document.execCommand("copy")
-
-      // targetElement.select();
-      // navigator.clipboard.writeText(targetElement.value)
-      // alert("Password copied" + targetElement.value)
+      if (evt.target.innerHTML) {
+        document.execCommand("copy")
+        alert("Password successfully copied!")
+      } else {
+        alert('no password to copy')
+      }
     }
   }
 

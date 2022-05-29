@@ -127,6 +127,14 @@ h3 {
   font-size: 1.25rem;
 }
 
+.italic {
+  font-style: italic;
+  margin-top: 15px;
+  font-size: .8rem;
+  color: var(--darkmode-hex-light-pink);
+  font-weight: 900;
+}
+
 label[type=text] {
   padding: 1rem 0rem;
   font-size: 1rem;
