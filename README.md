@@ -26,7 +26,6 @@
 
 ### Description:
 
-https://user-images.githubusercontent.com/11747875/147869105-330480a8-9561-4c81-8e1a-3c994991afd4.mp4
 
 ---
 
