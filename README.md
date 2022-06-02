@@ -39,7 +39,7 @@ A password generator that create a alpha-numeric/special character password
 ### Project v1.0 demonstrates the following:
 ---
 
-- [ ] <em>User Story 1: </em> Uses array to hold all possible characters.
+- [X] <em>User Story 1: </em> Uses array to hold all possible characters.
 - [ ] <em>User Story 2: </em> User should be able to click a button to create the password.
 - [ ] <em>User Story 3: </em> User should be able to generate multiple passwords
 - [ ] <em>User Story 4: </em> User should be able to see passwords displayed
