@@ -49,7 +49,7 @@ A password generator that create a alpha-numeric/special character password
 ### Project published at: 
 ---
 
-[Photo Portfolio](https://trrapp12.github.io/password-maker/)
+[Password Maker](https://trrapp12.github.io/password-maker/)
 
 ### More Information:
 ---
