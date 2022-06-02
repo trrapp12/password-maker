@@ -40,11 +40,11 @@ A password generator that create a alpha-numeric/special character password
 ---
 
 - [X] <em>User Story 1: </em> Uses array to hold all possible characters.
-- [ ] <em>User Story 2: </em> User should be able to click a button to create the password.
-- [ ] <em>User Story 3: </em> User should be able to generate multiple passwords
-- [ ] <em>User Story 4: </em> User should be able to see passwords displayed
-- [ ] <em>User Story 4: </em> User should be able to pick the length of the password
-- [ ] <em>User Story 4: </em> User should be able to have a 1-click copy/paste option for password
+- [X] <em>User Story 2: </em> User should be able to click a button to create the password.
+- [X] <em>User Story 3: </em> User should be able to generate multiple passwords
+- [X] <em>User Story 4: </em> User should be able to see passwords displayed
+- [X] <em>User Story 4: </em> User should be able to pick the length of the password
+- [X] <em>User Story 4: </em> User should be able to have a 1-click copy/paste option for password
 
 ### Project published at: 
 ---
