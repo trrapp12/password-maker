@@ -2,26 +2,25 @@
 
 :root {
   /* DarKMode Hex */
---darkmode-hex-light-pink: #D762D9;
---darkmode-hex-medium-pink : #B150F2;
---darkmode-hex-light-purple : #883DF2;
---darkmode-hex-dark : #282140;
---darkmode-hex-blue : #3113F2;
+  --darkmode-hex-light-pink: #d762d9;
+  --darkmode-hex-medium-pink: #b150f2;
+  --darkmode-hex-light-purple: #883df2;
+  --darkmode-hex-dark: #282140;
+  --darkmode-hex-blue: #3113f2;
 
-/* DarKMode rgba RGBA */
---darkmode-rgba-light-pink : rgba(214, 97, 216, 1);
---darkmode-rgba-medium-pink : rgba(177, 79, 242, 1);
---darkmode-rgba-light-purple : rgba(136, 60, 242, 1);
---darkmode-rgba-dark : rgba(39, 33, 63, 1);
---darkmode-rgba-blue : rgba(49, 19, 242, 1);
+  /* DarKMode rgba RGBA */
+  --darkmode-rgba-light-pink: rgba(214, 97, 216, 1);
+  --darkmode-rgba-medium-pink: rgba(177, 79, 242, 1);
+  --darkmode-rgba-light-purple: rgba(136, 60, 242, 1);
+  --darkmode-rgba-dark: rgba(39, 33, 63, 1);
+  --darkmode-rgba-blue: rgba(49, 19, 242, 1);
 
   /* Color Theme Light Mode */
-  --darkmode-hex-light-pink: #D762D9;
-  --darkmode-hex-medium-pink : #B150F2;
-  --darkmode-hex-light-purple : #883DF2;
-  --darkmode-hex-dark : #282140;
-  --darkmode-hex-blue : #3113F2;
-
+  --darkmode-hex-light-pink: #d762d9;
+  --darkmode-hex-medium-pink: #b150f2;
+  --darkmode-hex-light-purple: #883df2;
+  --darkmode-hex-dark: #282140;
+  --darkmode-hex-blue: #3113f2;
 }
 
 /* ==================== Normalizing ==================== */
@@ -31,7 +30,9 @@
   padding: 0px;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -63,7 +64,7 @@ button {
 }
 
 h1 {
-  color: var(--darkmode-hex-light-purple)
+  color: var(--darkmode-hex-light-purple);
   font-family: omnium-wide, sans-serif;
   font-size: 3rem;
   font-style: normal;
@@ -78,17 +79,17 @@ h3 {
   font-size: 1.25rem;
 }
 
-label[type=text] {
+label[type="text"] {
   font-size: 1rem;
   padding: 1rem 0rem;
 }
 
-input[type=text] {
+input[type="text"] {
   background-color: var(--darkmode-hex-dark);
   border: solid 2px var(--darkmode-hex-light-purple);
   color: white;
   font-size: 1rem;
-  padding: .75rem 1rem;
+  padding: 0.75rem 1rem;
   width: 22.7%;
 }
 
@@ -106,7 +107,7 @@ textarea {
   font-size: 1rem;
   margin-bottom: 1rem;
   overflow: auto;
-  padding: .75rem 1rem;
+  padding: 0.75rem 1rem;
   resize: none;
   width: 40%;
 }
@@ -157,7 +158,7 @@ textarea {
 
 .italic {
   color: var(--darkmode-hex-light-pink);
-  font-size: .8rem;
+  font-size: 0.8rem;
   font-style: italic;
   font-weight: 900;
   margin-top: 15px;
@@ -171,6 +172,3 @@ textarea {
 .margin-spacing {
   margin-bottom: 2.5rem;
 }
-
-
-
