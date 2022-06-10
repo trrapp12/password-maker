@@ -1,3 +1,5 @@
+/* ==================== Variables ==================== */
+
 :root {
   /* DarKMode Hex */
 --darkmode-hex-light-pink: #D762D9;
@@ -22,9 +24,15 @@
 
 }
 
+/* ==================== Normalizing ==================== */
+
 * {
   margin: 0px;
   padding: 0px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 html {
@@ -32,33 +40,82 @@ html {
   scroll-behavior: smooth;
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-.accent {
-  color: var(--darkmode-hex-light-pink);
-  display: block;
-}
+/* ==================== Elements ==================== */
 
 body {
   background-color: black;
   color: white;
-  padding: 1rem;
   font-family: omnium, sans-serif;
-  font-weight: 300;
-  font-style: normal;
   font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  padding: 1rem;
 }
 
 button {
+  background-color: var(--darkmode-hex-dark);
+  border: solid 2px var(--darkmode-hex-light-purple);
+  border-radius: 10px;
+  color: white;
+  margin-left: auto;
   padding: 1rem 2rem;
   text-transform: uppercase;
+}
+
+h1 {
+  color: var(--darkmode-hex-light-purple)
+  font-family: omnium-wide, sans-serif;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+label[type=text] {
+  font-size: 1rem;
+  padding: 1rem 0rem;
+}
+
+input[type=text] {
   background-color: var(--darkmode-hex-dark);
   border: solid 2px var(--darkmode-hex-light-purple);
   color: white;
-  margin-left: auto;
-  border-radius: 10px;
+  font-size: 1rem;
+  padding: .75rem 1rem;
+  width: 22.7%;
+}
+
+p {
+  margin: 0px;
+  padding: 0px;
+}
+
+textarea {
+  background-color: var(--darkmode-hex-dark);
+  border: none;
+  box-shadow: none;
+  color: white;
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  overflow: auto;
+  padding: .75rem 1rem;
+  resize: none;
+  width: 40%;
+}
+
+/* ==================== Classes ==================== */
+
+.accent {
+  color: var(--darkmode-hex-light-pink);
+  display: block;
 }
 
 .container--buttons {
@@ -74,21 +131,21 @@ button {
 }
 
 .container--input {
+  align-items: baseline;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: baseline;
 }
 
 .container--outer {
-  width: 50%;
-  height: 50%;
-  margin: auto;
-  display: flex;
-  justify-content: space-around;
   align-content: center;
   border: solid 10px var(--darkmode-hex-light-purple);
   border-radius: 10px;
+  display: flex;
+  height: 50%;
+  justify-content: space-around;
+  margin: auto;
+  width: 50%;
 }
 
 .container--results {
@@ -98,46 +155,12 @@ button {
   justify-content: space-between;
 }
 
-h1 {
-  font-family: omnium-wide, sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 3rem;
-  color: var(--darkmode-hex-light-purple)
-}
-
-h2 {
-  font-size: 2rem;
-}
-
-h3 {
-  font-size: 1.25rem;
-}
-
 .italic {
-  font-style: italic;
-  margin-top: 15px;
-  font-size: .8rem;
   color: var(--darkmode-hex-light-pink);
+  font-size: .8rem;
+  font-style: italic;
   font-weight: 900;
-}
-
-label[type=text] {
-  padding: 1rem 0rem;
-  font-size: 1rem;
-}
-
-input[type=text] {
-  background-color: var(--darkmode-hex-dark);
-  border: solid 2px var(--darkmode-hex-light-purple);
-  padding: .75rem 1rem;
-  color: white;
-  font-size: 1rem;
-  width: 22.7%;
-}
-
-.margin-spacing {
-  margin-bottom: 2.5rem;
+  margin-top: 15px;
 }
 
 .margin-bottom-decoration {
@@ -145,21 +168,9 @@ input[type=text] {
   padding-bottom: 2rem;
 }
 
-p {
-  padding: 0px;
-  margin: 0px;
+.margin-spacing {
+  margin-bottom: 2.5rem;
 }
 
-textarea {
-  display: block;
-  resize: none;
-  box-shadow: none;
-  border: none;
-  overflow: auto;
-  width: 40%;
-  font-size: 1rem;
-  padding: .75rem 1rem;
-  background-color: var(--darkmode-hex-dark);
-  margin-bottom: 1rem;
-  color: white;
-}
+
+
