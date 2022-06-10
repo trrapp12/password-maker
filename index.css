@@ -22,32 +22,18 @@
 
 }
 
-/* Omnium Light
-font-family: omnium, sans-serif;
-font-weight: 300;
-font-style: normal;
-
-Omnium Bold
-font-family: omnium, sans-serif;
-font-weight: 700;
-font-style: normal;
-
-Omnium Wide Light
-font-family: omnium-wide, sans-serif;
-font-weight: 300;
-font-style: normal;
-
-Omnium Wide Bold
-font-family: omnium-wide, sans-serif;
-font-weight: 700;
-font-style: normal; */
-
-html {
+* {
   margin: 0px;
   padding: 0px;
+}
+
+html {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-size: 20px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 .accent {
@@ -62,6 +48,7 @@ body {
   font-family: omnium, sans-serif;
   font-weight: 300;
   font-style: normal;
+  font-size: 20px;
 }
 
 button {
