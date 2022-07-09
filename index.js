@@ -41,7 +41,15 @@
   window.addEventListener('click', findTarget)
   // section 2 - password generation
   function getNumber() {
-    return Math.floor(document.getElementById('text').value)
+    let newNumber = Math.floor(document.getElementById('text').value)
+    if (!newNumber) {
+      alert('please enter a non-zero number')
+    } else if (Math.sign(newNumber) !== 1){
+      alert('please enter a positive number')
+    } else {
+      return newNumber;
+    }
+     
   }
 
   function generateRandomNumber() {

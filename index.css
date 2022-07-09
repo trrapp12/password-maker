@@ -175,8 +175,7 @@ textarea {
 @media screen and (max-width: 950px) { 
   .container--outer {
     align-content: center;
-    background-color: red;
-    border: solid 10px red;
+    border: solid 10px var(--darkmode-hex-light-purple);
     border-radius: 10px;
     display: flex;
     height: 50%;
@@ -187,7 +186,21 @@ textarea {
 }
 
 @media screen and (max-width: 600px) {
-  * {
+  .container--results {
+    display:  block;
+  }
+
+  textarea {
+    background-color: var(--darkmode-hex-dark);
+    border: none;
+    box-shadow: none;
+    color: white;
     display: block;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    overflow: auto;
+    padding: 0.25rem 1rem;
+    resize: none;
+    width: 100%;
   }
 }
