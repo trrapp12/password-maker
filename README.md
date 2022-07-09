@@ -32,7 +32,7 @@ https://user-images.githubusercontent.com/11747875/171567260-5b0b6102-cd7f-4aa1-
 
 ---
 
-A password generator that create a alpha-numeric/special character password
+A password generator that can generate multiple, randomized alpha-numeric/special character passwords.  Also includes a one-click copy/paste option.
 <br/>
 <br/>
 
