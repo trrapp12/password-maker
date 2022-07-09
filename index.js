@@ -25,9 +25,9 @@
     if (evt.target.className === 'option') {
       
       targetId = evt.target.id;
-      console.log(targetId)
+      // console.log(targetId)
       targetElement = document.getElementById(targetId);
-      console.log(targetElement)
+      // console.log(targetElement)
       targetElement.select();
       if (evt.target.innerHTML) {
         document.execCommand("copy")
