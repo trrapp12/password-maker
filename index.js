@@ -73,14 +73,8 @@
   }
 
   function reset () {
-    passwordArray1 = [];
-    passwordArray2 = [];
-    passwordArray3 = [];
-    passwordArray4 = [];
-    outPut1.innerText = '';
-    outPut2.innerText = '';
-    outPut3.innerText = '';
-    outPut4.innerText = '';
+    passwordArray1 = passwordArray2 = passwordArray3 = passwordArray4 = [];
+    outPut1.innerText = outPut2.innerText = outPut3.innerText = outPut4.innerText = '';
     textInput.value = '';
     passwordButton.innerText = "Generate Password"
   }
