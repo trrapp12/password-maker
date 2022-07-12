@@ -30,7 +30,8 @@
       // console.log(targetElement)
       targetElement.select();
       if (evt.target.innerHTML) {
-        document.execCommand("copy")
+        // document.execCommand("copy")
+        navigator.clipboard.writeText(evt.target.value)
         alert("Password successfully copied!")
       } else {
         alert('no password to copy')
@@ -67,19 +68,22 @@
 
     let outPutRegex = outPutArray.toString().replace(/,/g, '');
 
-    if (outPut1.innerHTML === '') {
+    if (outPut1.textContent === '' || outPut1.textContent === 'password option 1') {
       outPut1.innerText = outPutRegex;
-    } else if (outPut2.innerHTML === '') {
+    } else if (outPut2.textContent === '' || outPut2.textContent === 'password option 2') {
       outPut2.innerText = outPutRegex;
-    } else if (outPut3.innerHTML === '') {
+    } else if (outPut3.textContent === '' || outPut3.textContent === 'password option 3') {
       outPut3.innerText = outPutRegex;
-    } else if (outPut4.innerHTML === '') {
+    } else if (outPut4.textContent === '' || outPut4.textContent === 'password option 4') {
       outPut4.innerText = outPutRegex;
     } 
   }
 
   function reset () {
-    passwordArray1 = passwordArray2 = passwordArray3 = passwordArray4 = [];
+    passwordArray1 = [];
+    passwordArray2 = [];
+    passwordArray3 = [];
+    passwordArray4 = [];
     outPut1.innerText = outPut2.innerText = outPut3.innerText = outPut4.innerText = '';
     textInput.value = '';
     passwordButton.innerText = "Generate Password"
@@ -101,7 +105,7 @@
   }
 
   function generateRandomString () {
-    let num = getNumber()
+    let num = getNumber();
     validateNumber(num);
     // console.log(num)
     var x = checkWhichSlotsAreEmpty();
