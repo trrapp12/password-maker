@@ -61,14 +61,15 @@
   }
 
   function displayArray (outPutArray) {
+    let outPutRegex = outPutArray.toString().replace(/,/g, '')
     if (outPut1.innerHTML === '') {
-      outPut1.innerText = outPutArray.toString().replace(/,/g, '');
+      outPut1.innerText = outPutRegex;
     } else if (outPut2.innerHTML === '') {
-      outPut2.innerText = outPutArray.toString().replace(/,/g, '');
+      outPut2.innerText = outPutRegex;
     } else if (outPut3.innerHTML === '') {
-      outPut3.innerText = outPutArray.toString().replace(/,/g, '');
+      outPut3.innerText = outPutRegex;
     } else if (outPut4.innerHTML === '') {
-      outPut4.innerText = outPutArray.toString().replace(/,/g, '');
+      outPut4.innerText = outPutRegex;
     } 
   }
 
