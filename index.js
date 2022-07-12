@@ -41,7 +41,11 @@
   window.addEventListener('click', findTarget)
   // section 2 - password generation
   function getNumber() {
-    let newNumber = Math.floor(document.getElementById('text').value);
+    let newNumber = document.getElementById('text').value
+    return (newNumber === "" ? 8: Math.floor(newNumber));   
+  }
+
+  function validateNumber (newNumber) {
     if (!newNumber) {
       alert('please enter a non-zero number')
     } else if (Math.sign(newNumber) !== 1){
@@ -49,7 +53,6 @@
     } else {
       return newNumber;
     }
-     
   }
 
   function generateRandomNumber() {
@@ -61,7 +64,9 @@
   }
 
   function displayArray (outPutArray) {
-    let outPutRegex = outPutArray.toString().replace(/,/g, '')
+
+    let outPutRegex = outPutArray.toString().replace(/,/g, '');
+
     if (outPut1.innerHTML === '') {
       outPut1.innerText = outPutRegex;
     } else if (outPut2.innerHTML === '') {
@@ -96,7 +101,8 @@
   }
 
   function generateRandomString () {
-    let num = getNumber();
+    let num = getNumber()
+    validateNumber(num);
     // console.log(num)
     var x = checkWhichSlotsAreEmpty();
     for (let i = 0; i < num; i++) {
