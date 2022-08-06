@@ -185,6 +185,15 @@ textarea {
   margin-bottom: 1.25rem;
 }
 
+.option {
+  background-color: var(--darkmode-hex-dark);
+  border: solid 2px var(--darkmode-hex-light-purple);
+  color: white; 
+  font-size: 1rem;
+  padding: 1rem 1.75rem;
+  margin-bottom: .25rem;
+}
+
 
 /* ======================================= MEDIA QUERIES ======================================= */
 
