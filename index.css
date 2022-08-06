@@ -1,4 +1,4 @@
-/* ==================== Variables ==================== */
+/* ======================================= Variables ======================================= */
 
 :root {
   /* DarKMode Hex */
@@ -23,7 +23,7 @@
   --darkmode-hex-blue: #3113f2;
 }
 
-/* ==================== Normalizing ==================== */
+/* ======================================= Normalizing ======================================= */
 
 * {
   margin: 0px;
@@ -33,15 +33,17 @@
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
+  height: 100%;
+  transition: 500ms;
 }
 
-/* ==================== Elements ==================== */
+/* ======================================= Elements ======================================= */
 
 body {
   background-color: black;
@@ -50,6 +52,9 @@ body {
   font-size: 20px;
   font-style: normal;
   font-weight: 300;
+  min-height: 100vh;
+  padding: 1rem;
+  transition: 500ms;
 }
 
 button {
@@ -81,7 +86,6 @@ h3 {
 label[type="text"] {
   font-size: 1rem;
   padding: 1rem 0rem;
-  margin-right: 1rem;
 }
 
 input[type="text"] {
@@ -99,20 +103,21 @@ p {
 }
 
 textarea {
-	background-color: var(--darkmode-hex-dark);
-	border: none;
-	box-shadow: none;
-	color: white;
-	display: block;
-	font-size: 1rem;
-	margin-bottom: 1rem;
-	overflow: auto;
-	padding: 0.75rem 1rem;
-	resize: none;
-	width: 40%;
+  background-color: var(--darkmode-hex-dark);
+  border: none;
+  box-shadow: none;
+  color: white;
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  overflow: auto;
+  padding: 0.75rem 1rem;
+  resize: none;
+  transition: 500ms;
+  width: 40%;
 }
 
-/* ==================== Classes ==================== */
+/* ======================================= Classes ======================================= */
 
 .accent {
   color: var(--darkmode-hex-light-pink);
@@ -129,6 +134,7 @@ textarea {
   display: flex;
   flex-direction: column;
   padding: 1rem 2rem;
+  transition: 500ms;
 }
 
 .container--input {
@@ -139,14 +145,15 @@ textarea {
 }
 
 .container--outer {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  justify-content: space-around;
   align-content: center;
   border: solid 10px var(--darkmode-hex-light-purple);
   border-radius: 10px;
-  display: flex;
-  height: 50%;
-  justify-content: space-around;
-  margin: 1rem auto auto auto;
-  width: 50%;
+  transition: 500ms;
 }
 
 .container--results {
@@ -162,6 +169,7 @@ textarea {
   font-style: italic;
   font-weight: 900;
   margin-top: 15px;
+  margin-left: 1rem;
 }
 
 .margin-bottom-decoration {
@@ -173,36 +181,69 @@ textarea {
   margin-bottom: 2.5rem;
 }
 
-.option {
+.medium-spacing {
+  margin-bottom: 1.25rem;
+}
+
+
+/* ======================================= MEDIA QUERIES ======================================= */
+
+@media screen and (max-height: 730px) and (orientation: landscape) {
+  p {
+    display: none;
+  }
+
+  li {
+    display: none;
+  }
+
+  body {
+    background-color: black;
+    color: white;
+    font-family: omnium, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    height: 100vh;
+    padding: 1rem;
+  }
+
+  .margin-spacing {
+    margin-bottom: 1rem;
+  }
+
+  h1 {
+    font-size: 1rem;
+  }
+
+  .margin-spacing {
+    margin-bottom: 0px;
+  }
+
+  textarea {
     background-color: var(--darkmode-hex-dark);
     border: none;
     box-shadow: none;
     color: white;
     display: block;
     font-size: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
     overflow: auto;
-    padding: 0.75rem 1rem;
+    padding: 0rem;
     resize: none;
     width: 40%;
-}
-
-@media screen and (max-width: 950px) { 
-  .container--outer {
-    align-content: center;
-    border: solid 10px var(--darkmode-hex-light-purple);
-    border-radius: 10px;
-    display: flex;
-    height: 50%;
-    justify-content: space-around;
-    margin: 0;
-    width: 100%;
   }
 }
 
-@media screen and (max-width: 600px) {
+
+@media screen and (max-width: 450px) {
+
+  html {
+    font-size: 16px;
+  }
+
   .container--results {
-    display:  block;
+    display: block;
   }
 
   textarea {
@@ -214,8 +255,54 @@ textarea {
     font-size: 1rem;
     margin-bottom: 1rem;
     overflow: auto;
-    padding: 0.25rem 1rem;
+    padding: 0.5rem 1rem;
     resize: none;
     width: 100%;
   }
+
+  .container--outer {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+    border: solid 10px var(--darkmode-hex-light-purple);
+    border-radius: 10px;
+  }
 }
+
+
+
+@media screen and (min-width: 400px) and (orientation: landscape) {
+  body {
+    background-color: black;
+    color: white;
+    font-family: omnium, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    height: 100vh;
+    padding: 1rem;
+  }
+  
+  .container--dark-mode {
+    display: block;
+    flex-direction: row;
+    padding: 1rem 2rem;
+    width: 90%;
+  }
+
+  .container--outer {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: space-around;
+    align-content: center;
+    border: solid 10px var(--darkmode-hex-light-purple);
+    border-radius: 10px;
+  }
+}
+
+
+  
