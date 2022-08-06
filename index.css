@@ -52,7 +52,8 @@ body {
   font-size: 20px;
   font-style: normal;
   font-weight: 300;
-  min-height: 100vh;
+  height: 100vh;
+  min-height: fit-content;
   padding: 1rem;
   transition: 500ms;
 }
@@ -135,6 +136,7 @@ textarea {
   flex-direction: column;
   padding: 1rem 2rem;
   transition: 500ms;
+  width: 80%;
 }
 
 .container--input {
@@ -161,8 +163,8 @@ textarea {
   flex-direction: row;
   flex-flow: wrap;
   justify-content: space-between;
+  flex-basis: content;
 }
-
 .italic {
   color: var(--darkmode-hex-light-pink);
   font-size: 0.8rem;
@@ -188,17 +190,18 @@ textarea {
 .option {
   background-color: var(--darkmode-hex-dark);
   border: solid 2px var(--darkmode-hex-light-purple);
-  color: white; 
+  color: #ffffff40;
   font-size: 1rem;
   padding: 1rem 1.75rem;
   margin-bottom: .25rem;
+  width: 48%;
 }
 
 
 /* ======================================= MEDIA QUERIES ======================================= */
 
 @media screen and (max-height: 730px) and (orientation: landscape) {
-  p {
+  .margin-spacing > p {
     display: none;
   }
 
@@ -229,6 +232,16 @@ textarea {
     margin-bottom: 0px;
   }
 
+  .option {
+    background-color: var(--darkmode-hex-dark);
+    border: solid 2px var(--darkmode-hex-light-purple);
+    color: #ffffff40;
+    font-size: 1rem;
+    padding: 1rem 1.75rem;
+    margin-bottom: .25rem;
+    width: 48%;
+  }
+
   textarea {
     background-color: var(--darkmode-hex-dark);
     border: none;
@@ -251,8 +264,51 @@ textarea {
     font-size: 16px;
   }
 
+  h1 {
+    font-size: 2rem;
+  }
+
+  .container--input {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container--outer {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: flex-start;
+  border: solid 10px var(--darkmode-hex-light-purple);
+  border-radius: 10px;
+  height: min-content;
+}
+
   .container--results {
     display: block;
+  }
+
+  .option {
+    background-color: var(--darkmode-hex-dark);
+    border: solid 2px var(--darkmode-hex-light-purple);
+    color: #ffffff40;
+    font-size: 1rem;
+    padding: 1rem 1.75rem;
+    margin-bottom: .25rem;
+    width: 100%;
+  }
+
+  label[type="text"] {
+    font-size: .75rem;
+    padding: 0rem;
+}
+
+  p {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1rem;
   }
 
   textarea {
@@ -268,21 +324,11 @@ textarea {
     resize: none;
     width: 100%;
   }
-
-  .container--outer {
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: flex-start;
-    border: solid 10px var(--darkmode-hex-light-purple);
-    border-radius: 10px;
-  }
 }
 
 
 
-@media screen and (min-width: 400px) and (orientation: landscape) {
+@media screen and (min-width: 400px) and (max-width: 700px) and (orientation: landscape) {
   body {
     background-color: black;
     color: white;
@@ -310,6 +356,16 @@ textarea {
     align-content: center;
     border: solid 10px var(--darkmode-hex-light-purple);
     border-radius: 10px;
+  }
+
+  .option {
+    background-color: var(--darkmode-hex-dark);
+    border: solid 2px var(--darkmode-hex-light-purple);
+    color: #ffffff40;
+    font-size: .75rem;
+    padding: .5rem;
+    margin-bottom: .25rem;
+    width: 48%;
   }
 }
 
