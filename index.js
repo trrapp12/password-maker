@@ -15,7 +15,9 @@
   let passwordArray3 = [];
   let passwordArray4 = [];
 
-  let characterArray ="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_-`+=-~".split('')
+
+  let characterArray = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+=-~'.split('');
+
   // create functions
 
   // section 1 - copy functionality
@@ -24,12 +26,13 @@
     if (evt.target.className === 'option') {
       
       targetId = evt.target.id;
-      console.log(targetId)
+      // console.log(targetId)
       targetElement = document.getElementById(targetId);
-      console.log(targetElement)
+      // console.log(targetElement)
       targetElement.select();
       if (evt.target.innerHTML) {
-        document.execCommand("copy")
+        // document.execCommand("copy")
+        navigator.clipboard.writeText(evt.target.value)
         alert("Password successfully copied!")
       } else {
         alert('no password to copy')
@@ -40,7 +43,18 @@
   window.addEventListener('click', findTarget)
   // section 2 - password generation
   function getNumber() {
-    return Math.floor(document.getElementById('text').value)
+    let newNumber = document.getElementById('text').value
+    return (newNumber === "" ? 8: Math.floor(newNumber));   
+  }
+
+  function validateNumber (newNumber) {
+    if (!newNumber) {
+      alert('please enter a non-zero number')
+    } else if (Math.sign(newNumber) !== 1){
+      alert('please enter a positive number')
+    } else {
+      return newNumber;
+    }
   }
 
   function generateRandomNumber() {
@@ -52,14 +66,17 @@
   }
 
   function displayArray (outPutArray) {
-    if (outPut1.innerHTML === '') {
-      outPut1.innerText = outPutArray.toString().replace(/,/g, '');
-    } else if (outPut2.innerHTML === '') {
-      outPut2.innerText = outPutArray.toString().replace(/,/g, '');
-    } else if (outPut3.innerHTML === '') {
-      outPut3.innerText = outPutArray.toString().replace(/,/g, '');
-    } else if (outPut4.innerHTML === '') {
-      outPut4.innerText = outPutArray.toString().replace(/,/g, '');
+
+    let outPutRegex = outPutArray.toString().replace(/,/g, '');
+
+    if (outPut1.textContent === '' || outPut1.textContent === 'password option 1') {
+      outPut1.innerText = outPutRegex;
+    } else if (outPut2.textContent === '' || outPut2.textContent === 'password option 2') {
+      outPut2.innerText = outPutRegex;
+    } else if (outPut3.textContent === '' || outPut3.textContent === 'password option 3') {
+      outPut3.innerText = outPutRegex;
+    } else if (outPut4.textContent === '' || outPut4.textContent === 'password option 4') {
+      outPut4.innerText = outPutRegex;
     } 
   }
 
@@ -68,10 +85,7 @@
     passwordArray2 = [];
     passwordArray3 = [];
     passwordArray4 = [];
-    outPut1.innerText = '';
-    outPut2.innerText = '';
-    outPut3.innerText = '';
-    outPut4.innerText = '';
+    outPut1.innerText = outPut2.innerText = outPut3.innerText = outPut4.innerText = '';
     textInput.value = '';
     passwordButton.innerText = "Generate Password"
   }
@@ -93,6 +107,7 @@
 
   function generateRandomString () {
     let num = getNumber();
+    validateNumber(num);
     // console.log(num)
     var x = checkWhichSlotsAreEmpty();
     for (let i = 0; i < num; i++) {

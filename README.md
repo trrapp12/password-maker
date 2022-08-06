@@ -32,14 +32,14 @@ https://user-images.githubusercontent.com/11747875/171567260-5b0b6102-cd7f-4aa1-
 
 ---
 
-A password generator that create a alpha-numeric/special character password
+A password generator that can generate multiple, randomized alpha-numeric/special character passwords.  Also includes a one-click copy/paste option.
 <br/>
 <br/>
 
 ### Project v1.0 demonstrates the following:
 ---
 
-- [X] <em>User Story 1: </em> Uses array to hold all possible characters.
+- [X] <em>User Story 1: </em> User should be able to get a password with alphanumeric characters and special characters.
 - [X] <em>User Story 2: </em> User should be able to click a button to create the password.
 - [X] <em>User Story 3: </em> User should be able to generate multiple passwords
 - [X] <em>User Story 4: </em> User should be able to see passwords displayed
