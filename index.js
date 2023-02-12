@@ -26,12 +26,8 @@
     if (evt.target.className === 'option') {
       
       targetId = evt.target.id;
-      // console.log(targetId)
       targetElement = document.getElementById(targetId);
-      // console.log(targetElement)
-      targetElement.select();
       if (evt.target.innerHTML) {
-        // document.execCommand("copy")
         navigator.clipboard.writeText(evt.target.value)
         alert("Password successfully copied!")
       } else {
@@ -108,10 +104,8 @@
   function generateRandomString () {
     let num = getNumber();
     validateNumber(num);
-    // console.log(num)
     var x = checkWhichSlotsAreEmpty();
     for (let i = 0; i < num; i++) {
-      // console.log(i)
       var y = generateRandomNumber();
       updateArray(x, y);
     }
