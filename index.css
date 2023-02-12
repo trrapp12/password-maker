@@ -195,6 +195,7 @@ textarea {
   padding: 1rem 1.75rem;
   margin-bottom: .25rem;
   width: 48%;
+  word-break: break-all;
 }
 
 
