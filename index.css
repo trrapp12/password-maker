@@ -201,12 +201,10 @@ textarea {
 /* ======================================= MEDIA QUERIES ======================================= */
 
 @media screen and (max-height: 730px) and (orientation: landscape) {
-  .margin-spacing > p {
-    display: none;
-  }
 
-  li {
-    display: none;
+  .accent {
+    color: var(--darkmode-hex-light-pink);
+    display: contents;
   }
 
   body {
@@ -220,13 +218,22 @@ textarea {
     padding: 1rem;
   }
 
+  li {
+    display: none;
+  }
+
+  .margin-spacing > p {
+    display: none;
+  }
+
   .margin-spacing {
     margin-bottom: 1rem;
   }
 
   h1 {
-    font-size: 1rem;
-  }
+    font-size: 2rem;
+    width: 100%;
+}
 
   .margin-spacing {
     margin-bottom: 0px;
@@ -258,7 +265,7 @@ textarea {
 }
 
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
 
   html {
     font-size: 16px;
@@ -285,6 +292,7 @@ textarea {
   border-radius: 10px;
   height: min-content;
 }
+
 
   .container--results {
     display: block;
