@@ -43,8 +43,8 @@ A password generator that can generate multiple, randomized alpha-numeric/specia
 - [X] <em>User Story 2: </em> User should be able to click a button to create the password.
 - [X] <em>User Story 3: </em> User should be able to generate multiple passwords
 - [X] <em>User Story 4: </em> User should be able to see passwords displayed
-- [X] <em>User Story 4: </em> User should be able to pick the length of the password
-- [X] <em>User Story 4: </em> User should be able to have a 1-click copy/paste option for password
+- [X] <em>User Story 5: </em> User should be able to pick the length of the password
+- [X] <em>User Story 6: </em> User should be able to have a 1-click copy/paste option for password
 
 ### Project published at: 
 ---
