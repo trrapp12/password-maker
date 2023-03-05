@@ -1,8 +1,7 @@
 # PASSWORD MAKER
 
-##### Contributors: Trevor Rapp
-
 ---
+
 <br>
 
 https://user-images.githubusercontent.com/11747875/218293195-e114b2af-b559-48bf-abf1-fb266433940a.mp4
