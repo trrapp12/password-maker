@@ -1,4 +1,4 @@
-# password-maker
+# PASSWORD MAKER
 
 ##### Contributors: Trevor Rapp
 
@@ -22,14 +22,11 @@ https://user-images.githubusercontent.com/11747875/218293195-e114b2af-b559-48bf-
 <img align="left" alt="GitHub" width="26px" src="https://raw.githubusercontent.com/github/explore/78df643247d429f6cc873026c0622819ad797942/topics/github/github.png" />
 <img align="left" alt="Terminal" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/terminal/terminal.png" />
 
-<br>
-<br>
-
 ---
+<br>
+<br>
 
 ### Description:
-
-
 ---
 
 A password generator that can generate multiple, randomized alpha-numeric/special character passwords.  Also includes a one-click copy/paste option.
@@ -46,12 +43,29 @@ A password generator that can generate multiple, randomized alpha-numeric/specia
 - [X] <em>User Story 5: </em> User should be able to pick the length of the password
 - [X] <em>User Story 6: </em> User should be able to have a 1-click copy/paste option for password
 
-### Project published at: 
+<br/>
+<br/>
+
+### MY OWN PERSONAL CONTRIBUTIONS INCLUDED
 ---
 
-[Password Maker](https://trrapp12.github.io/password-maker/)
 
-### More Information:
+
+<br/>
+<br/>
+
+### CREDITS: 
+---
+
+Project created by TREVOR RAPP
+
+Original project was part of the <a href="https://scrimba.com/learn/frontend"> Scrimba's Front End Development Course.</a>
+
+<br/>
+<br/>
+
+
+### YOU CAN FIND ME AT:
 ---
 
 \**For more information see my [LinkedIn](https://www.linkedin.com/in/trevor-rapp-042a1037) or return to my [Github](https://github.com/trrapp12)*
