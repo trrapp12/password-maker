@@ -34,8 +34,6 @@ https://user-images.githubusercontent.com/11747875/218293195-e114b2af-b559-48bf-
 > -- Clifford Stoll
 
 A password generator that can generate multiple, randomized alpha-numeric/special character passwords.  Also includes a one-click copy/paste option.
-<br/>
-<br/>
 
 ### Project v1.0 demonstrates the following:
 ---
@@ -47,8 +45,6 @@ A password generator that can generate multiple, randomized alpha-numeric/specia
 - [X] <em>User Story 5: </em> User should be able to pick the length of the password.
 - [X] <em>User Story 6: </em> User should be able to have a 1-click copy/paste option for password.
 
-<br/>
-<br/>
 
 ### CHALLENGES I OVERCAME
 ---
@@ -77,16 +73,11 @@ As far as technical issues most were pretty straightforward.  Some interesting c
 ```
 3. This was also where I started really getting used to the idea of functional programming and giving only one functionality to one function.
 
-<br/>
-<br/>
 
 ### MY OWN PERSONAL CONTRIBUTIONS INCLUDED
 ---
 
 This project was a solo project from Scrimba, meaning that only the requirements were given.  All work was my own.
-
-<br/>
-<br/>
 
 ### CREDITS: 
 ---
@@ -94,10 +85,6 @@ This project was a solo project from Scrimba, meaning that only the requirements
 Project created by TREVOR RAPP
 
 Original project idea was part of the <a href="https://scrimba.com/learn/frontend"> Scrimba's Front End Development Course.</a>
-
-<br/>
-<br/>
-
 
 ### YOU CAN FIND ME AT:
 ---
