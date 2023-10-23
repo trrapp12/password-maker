@@ -95,19 +95,19 @@ As far as technical issues most were pretty straightforward.  Some interesting c
 
 ---
 
-### MY OWN PERSONAL CONTRIBUTIONS INCLUDED
+### MY OWN PERSONAL CONTRIBUTIONS INCLUDED:
 
-This project was a solo project from Scrimba, meaning that only the requirements were given.  All work was my own.
+- [X] all work is completely my own.  The only directions were user stories the assignment needed to complete.
 
 <br/>
 
 ---
 
-### CREDITS: 
+### ATTRIBUTIONS: 
 
 Project created by TREVOR RAPP
 
-Original project idea was part of the <a href="https://scrimba.com/learn/frontend"> Scrimba's Front End Development Course.</a>
+* Original project idea was part of the <a href="https://scrimba.com/learn/frontend"> Scrimba's Front End Development Course.</a>
 
 <br/>
 
