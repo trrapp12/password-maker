@@ -6,15 +6,15 @@
 
 *All work is completely my own. This project completed as a solo project in the Scrimba [Front End Developer Career Path](https://scrimba.com/learn/frontend), meaning specifications for what the project should be able to do were given, but no help or instruction was provided.*
 
+<br/>
+
 ---
+
+[![View Project](https://user-images.githubusercontent.com/11747875/141705232-471a0b9c-ca45-4540-a1b6-740c5e1becbe.png)](https://trrapp12.github.io/password-maker/)
 
 <br>
 
 https://user-images.githubusercontent.com/11747875/218293195-e114b2af-b559-48bf-abf1-fb266433940a.mp4
-
-<br>
-
-[![View Project](https://user-images.githubusercontent.com/11747875/141705232-471a0b9c-ca45-4540-a1b6-740c5e1becbe.png)](https://trrapp12.github.io/password-maker/)
 
 <br>
 
@@ -28,21 +28,22 @@ https://user-images.githubusercontent.com/11747875/218293195-e114b2af-b559-48bf-
 <img align="left" alt="Terminal" width="40px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/terminal/terminal.png" />
 
 <br>
-<br>
+
 ---
 
-<br>
-<br>
-
-### Description:
+### DESCRIPTION:
 
 > Treat your password like your toothbrush. Don't let anybody else use it, and get a new one every six months.
 > -- Clifford Stoll
 
 A password generator that can generate multiple, randomized alpha-numeric/special character passwords.  Also includes a one-click copy/paste option.
 
-### Project v1.0 demonstrates the following:
+<br/>
+
 ---
+
+### PROJECT V1.0 DEMONSTRATES THE FOLLOWING:
+
 
 - [X] <em>User Story 1: </em> User should be able to get a password with alphanumeric characters and special characters.
 - [X] <em>User Story 2: </em> User should be able to click a button to create the password.
@@ -51,9 +52,12 @@ A password generator that can generate multiple, randomized alpha-numeric/specia
 - [X] <em>User Story 5: </em> User should be able to pick the length of the password.
 - [X] <em>User Story 6: </em> User should be able to have a 1-click copy/paste option for password.
 
+<br/>
+
+---
 
 ### CHALLENGES I OVERCAME
----
+
 
 As far as technical issues most were pretty straightforward.  Some interesting challenges I found were.
 
@@ -79,21 +83,29 @@ As far as technical issues most were pretty straightforward.  Some interesting c
 ```
 3. This was also where I started really getting used to the idea of functional programming and giving only one functionality to one function.
 
+<br/>
+
+---
 
 ### MY OWN PERSONAL CONTRIBUTIONS INCLUDED
----
 
 This project was a solo project from Scrimba, meaning that only the requirements were given.  All work was my own.
 
-### CREDITS: 
+<br/>
+
 ---
+
+### CREDITS: 
 
 Project created by TREVOR RAPP
 
 Original project idea was part of the <a href="https://scrimba.com/learn/frontend"> Scrimba's Front End Development Course.</a>
 
-### YOU CAN FIND ME AT:
+<br/>
+
 ---
+
+### YOU CAN FIND ME AT:
 
 \**For more information see my [LinkedIn](https://www.linkedin.com/in/trevor-rapp-042a1037) or return to my [Github](https://github.com/trrapp12)*
 
