@@ -1,5 +1,11 @@
 # PASSWORD MAKER
 
+<br/>
+
+#### Contributors: Trevor Rapp
+
+*All work is completely my own. This project completed as a solo project in the Scrimba [Front End Developer Career Path](https://scrimba.com/learn/frontend), meaning specifications for what the project should be able to do were given, but no help or instruction was provided.*
+
 ---
 
 <br>
