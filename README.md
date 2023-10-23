@@ -42,6 +42,14 @@ A password generator that can generate multiple, randomized alpha-numeric/specia
 
 ---
 
+### QUICKSTART GUIDE
+
+To use the app simply click on the ```View Project``` button or visit <a href="https://trrapp12.github.io/survey-form/">https://trrapp12.github.io/survey-form/</a>. 
+
+<br/>
+
+---
+
 ### PROJECT V1.0 DEMONSTRATES THE FOLLOWING:
 
 
