@@ -95,7 +95,7 @@ As far as technical issues most were pretty straightforward.  Some interesting c
 
 ---
 
-### MY OWN PERSONAL CONTRIBUTIONS INCLUDED:
+### MY OWN PERSONAL CONTRIBUTIONS INCLUDED
 
 - [X] all work is completely my own.  The only directions were user stories the assignment needed to complete.
 
@@ -103,7 +103,7 @@ As far as technical issues most were pretty straightforward.  Some interesting c
 
 ---
 
-### ATTRIBUTIONS: 
+### ATTRIBUTIONS
 
 Project created by TREVOR RAPP
 
@@ -113,7 +113,7 @@ Project created by TREVOR RAPP
 
 ---
 
-### YOU CAN FIND ME AT:
+### YOU CAN FIND ME AT
 
 \**For more information see my [LinkedIn](https://www.linkedin.com/in/trevor-rapp-042a1037) or return to my [Github](https://github.com/trrapp12)*
 
