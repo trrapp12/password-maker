@@ -103,6 +103,14 @@ As far as technical issues most were pretty straightforward.  Some interesting c
 
 ---
 
+### SCRIMBA FRONT END DEVELOPER CAREER CERTIFICATE:
+
+[CERTIFICATE OF COMPLETION - The Frontend Developer Career Path.pdf](https://github.com/trrapp12/dice-game/files/13483804/CERTIFICATE.OF.COMPLETION.-.The.Frontend.Developer.Career.Path.pdf)
+
+<br/>
+
+---
+
 ### ATTRIBUTIONS
 
 Project created by TREVOR RAPP
