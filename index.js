@@ -132,6 +132,15 @@
     }
   }
 
+  function turnTextWhite(element) {
+    element.style.color = 'white';
+  }
+  function turnTextBlack(...elements) {
+    elements.forEach((el) => {
+      el.style.color = '#ffffff40';
+    });
+  }
+
   function displayArray(outPutArray) {
     console.log('displayArray called');
     let outPutRegex = outPutArray.toString().replace(/,/g, '');
@@ -139,24 +148,28 @@
     if (outPut1.innerText === '' || outPut1.innerText === 'password option 1') {
       console.log('outPut1 is empty');
       outPut1.innerText = outPutRegex;
+      turnTextWhite(outPut1);
     } else if (
       outPut2.innerText === '' ||
       outPut2.innerText === 'password option 2'
     ) {
       console.log('outPut2 is empty');
       outPut2.innerText = outPutRegex;
+      turnTextWhite(outPut2);
     } else if (
       outPut3.innerText === '' ||
       outPut3.innerText === 'password option 3'
     ) {
       console.log(' outPut3 is empty');
       outPut3.innerText = outPutRegex;
+      turnTextWhite(outPut3);
     } else if (
       outPut4.innerText === '' ||
       outPut4.innerText === 'password option 4'
     ) {
       console.log('outPut4 is empty');
       outPut4.innerText = outPutRegex;
+      turnTextWhite(outPut4);
     }
   }
 
@@ -166,11 +179,11 @@
     passwordArray2 = [];
     passwordArray3 = [];
     passwordArray4 = [];
-    outPut1.innerText =
-      outPut2.innerText =
-      outPut3.innerText =
-      outPut4.innerText =
-        '';
+    outPut1.innerText = 'password option 1';
+    outPut2.innerText = 'password option 2';
+    outPut3.innerText = 'password option 3';
+    outPut4.innerText = 'password option 4';
+    turnTextBlack(outPut1, outPut2, outPut3, outPut4);
     rangeSlider.value = '';
     passwordButton.innerText = 'Generate Password';
   }
