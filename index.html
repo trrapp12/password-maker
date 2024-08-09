@@ -1,41 +1,92 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta
+      name="viewport"
+      content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
     <title>Trevor Rapp Password Generator</title>
-    <link href="index.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.typekit.net/pcq5txz.css">
+    <link
+      href="index.css"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://use.typekit.net/pcq5txz.css" />
   </head>
   <body>
     <div class="container--outer">
       <div class="container--dark-mode">
-        <div class="margin-spacing margin-bottom-decoration ">
-          <h1>Generate a <span class="accent medium-spacing">Random Password</span></h1>
+        <div class="margin-spacing margin-bottom-decoration">
+          <h1>
+            Generate a
+            <span class="accent medium-spacing">Random Password</span>
+          </h1>
           <p>Never have to use an insecure password again</p>
           <ul>
-            <li class="italic">Includes alpha-numerica and special characters</li>
+            <li class="italic">
+              Includes alpha-numerica and special characters
+            </li>
             <li class="italic">Click the result to copy to clipboard</li>
           </ul>
         </div>
         <div class="container--input margin-spacing">
-          <label for="text" type='text' id="text-label">How long do you want the password to be?</label>
-          <input type="text" id="text" name="text"/>
+          <label
+            for="text"
+            type="text"
+            id="text-label"
+            >Password Length</label
+          >
+          <div class="slide-container">
+            <input
+            min="1"
+            max="50"
+            value="20"
+            type="range"
+            id="text"
+            name="text" 
+            class="slider"/>
+          </div class="slide-container">
+
         </div>
-        <div class="container--buttons margin-spacing margin-bottom-decoration ">
-          <button id="button" class="button">Generate Password</button>
+        <div class="container--buttons margin-spacing margin-bottom-decoration">
+          <button
+            id="button"
+            class="button">
+            Generate Password
+          </button>
         </div>
         <div class="container--results">
-          <p id="option-1" class="option" placeholder="password option 1">password option 1</p>
-          <p id="option-2" class="option" placeholder="password option 2">password option 2</p>
-          <p id="option-3" class="option" placeholder="password option 3">password option 3</p>
-          <p id="option-4" class="option" placeholder="password option 4">password option 4</p>
+          <p
+            id="option-1"
+            class="option"
+            placeholder="password option 1">
+            password option 1
+          </p>
+          <p
+            id="option-2"
+            class="option"
+            placeholder="password option 2">
+            password option 2
+          </p>
+          <p
+            id="option-3"
+            class="option"
+            placeholder="password option 3">
+            password option 3
+          </p>
+          <p
+            id="option-4"
+            class="option"
+            placeholder="password option 4">
+            password option 4
+          </p>
         </div>
-        <div class="security-rating">
-        </div>
+        <div class="security-rating"></div>
       </div>
-     </div>
+    </div>
     <script src="index.js"></script>
   </body>
 </html>

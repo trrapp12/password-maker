@@ -84,18 +84,72 @@ h3 {
   font-size: 1.25rem;
 }
 
-label[type="text"] {
+label[type='text'] {
   font-size: 1rem;
   padding: 1rem 0rem;
 }
 
-input[type="text"] {
+input[type='text'] {
   background-color: var(--darkmode-hex-dark);
   border: solid 2px var(--darkmode-hex-light-purple);
   color: white;
   font-size: 1rem;
   padding: 0.75rem 1rem;
   width: 22.7%;
+}
+
+input[type='range'] {
+  /* Styles for the track */
+  -webkit-appearance: none; /* Removes default styling in WebKit browsers */
+  appearance: none;
+  width: calc((80vw / 2) - 4.5rem); /* Full-width */
+  height: 2px; /* Specified height of the track */
+  background: #ddd; /* Background color of the track */
+  outline: none; /* Removes the outline */
+  opacity: 0.7; /* Partial transparency */
+  transition: opacity 0.2s; /* Smooth transition for hover effect */
+  height: 1.25rem;
+  border: 2px solid var(--darkmode-rgba-light-purple);
+  background-color: rgba(255, 255, 255, 0);
+}
+
+input[type='range']:hover {
+  opacity: 1; /* Full opacity on hover */
+}
+
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Required for WebKit browsers */
+  appearance: none;
+  width: 3rem; /* Width of the thumb */
+  height: 3rem; /* Height of the thumb */
+  background: var(--darkmode-hex-light-purple);
+  cursor: pointer; /* Cursor on hover */
+  border-radius: 50%; /* Round corners */
+  border: 5px solid black;
+  content: 's';
+  color: white;
+}
+
+input[type='range']::-moz-range-thumb {
+  width: 3rem;
+  height: 3rem;
+  background: var(--darkmode-hex-light-purple);
+  cursor: pointer;
+  border-radius: 50%;
+  border: 5px solid black;
+  content: 's';
+  color: white;
+}
+
+input[type='range']::-ms-thumb {
+  width: 3rem;
+  height: 3rem;
+  background: var(--darkmode-hex-light-purple);
+  cursor: pointer;
+  border-radius: 50%;
+  border: 5px solid black;
+  content: 's';
+  color: white;
 }
 
 p {
@@ -193,16 +247,14 @@ textarea {
   color: #ffffff40;
   font-size: 1rem;
   padding: 1rem 1.75rem;
-  margin-bottom: .25rem;
+  margin-bottom: 0.25rem;
   width: 48%;
   word-break: break-all;
 }
 
-
 /* ======================================= MEDIA QUERIES ======================================= */
 
 @media screen and (max-height: 730px) and (orientation: landscape) {
-
   .accent {
     color: var(--darkmode-hex-light-pink);
     display: contents;
@@ -234,7 +286,7 @@ textarea {
   h1 {
     font-size: 2rem;
     width: 100%;
-}
+  }
 
   .margin-spacing {
     margin-bottom: 0px;
@@ -246,7 +298,7 @@ textarea {
     color: #ffffff40;
     font-size: 1rem;
     padding: 1rem 1.75rem;
-    margin-bottom: .25rem;
+    margin-bottom: 0.25rem;
     width: 48%;
   }
 
@@ -265,9 +317,7 @@ textarea {
   }
 }
 
-
 @media screen and (max-width: 500px) {
-
   html {
     font-size: 16px;
   }
@@ -281,19 +331,18 @@ textarea {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
+  }
 
-.container--outer {
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-content: flex-start;
-  border: solid 10px var(--darkmode-hex-light-purple);
-  border-radius: 10px;
-  height: min-content;
-}
-
+  .container--outer {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+    border: solid 10px var(--darkmode-hex-light-purple);
+    border-radius: 10px;
+    height: min-content;
+  }
 
   .container--results {
     display: block;
@@ -305,14 +354,14 @@ textarea {
     color: #ffffff40;
     font-size: 1rem;
     padding: 1rem 1.75rem;
-    margin-bottom: .25rem;
+    margin-bottom: 0.25rem;
     width: 100%;
   }
 
-  label[type="text"] {
-    font-size: .75rem;
+  label[type='text'] {
+    font-size: 0.75rem;
     padding: 0rem;
-}
+  }
 
   p {
     margin: 0px;
@@ -335,8 +384,6 @@ textarea {
   }
 }
 
-
-
 @media screen and (min-width: 400px) and (max-width: 700px) and (orientation: landscape) {
   body {
     background-color: black;
@@ -348,7 +395,7 @@ textarea {
     height: 100vh;
     padding: 1rem;
   }
-  
+
   .container--dark-mode {
     display: block;
     flex-direction: row;
@@ -371,12 +418,9 @@ textarea {
     background-color: var(--darkmode-hex-dark);
     border: solid 2px var(--darkmode-hex-light-purple);
     color: #ffffff40;
-    font-size: .75rem;
-    padding: .5rem;
-    margin-bottom: .25rem;
+    font-size: 0.75rem;
+    padding: 0.5rem;
+    margin-bottom: 0.25rem;
     width: 48%;
   }
 }
-
-
-  
